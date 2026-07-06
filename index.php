@@ -18,6 +18,9 @@
 
         loadPage(window.location.pathname);
 
+        // esta funcion se ejecuta cada vez que se presiona el boton para atras del propio navegador
+        // al presionarlo la utl cambia no necesita history.pushState y mandamos a llamar a loadPage
+        // para que el contenido corresponda a la url
         window.addEventListener("popstate", function () {
             loadPage(window.location.pathname);
         });
