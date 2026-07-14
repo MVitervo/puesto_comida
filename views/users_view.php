@@ -2,21 +2,29 @@
     Usuarios
 </h1>
 <!-- <button onclick="navigate('/users')">Home</button> -->
- <table>
+<table class="table">
     <thead>
         <tr>
-            <td>Usuario</td>
-            <td>Contraseña</td>
-            <td>Role</td>
-            <td>Ultima persona en modificar</td>
-            <td>Ultima fecha de modificacion</td>
+            <th>Usuario</th>
+            <th>Contraseña</th>
+            <th>Role</th>
+            <th>Ultima persona en modificar</th>
+            <th>Ultima fecha de modificacion</th>
         </tr>
     </thead>
     <tbody>
-
+        <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+        </tr>
     </tbody>
- </table>
+</table>
+
+
+<!-- hay que hacer que cargue el bootstrap -->
 
 <script>
-    
+
 </script>
