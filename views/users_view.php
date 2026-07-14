@@ -2,24 +2,31 @@
     Usuarios
 </h1>
 <!-- <button onclick="navigate('/users')">Home</button> -->
-<table class="table">
-    <thead>
-        <tr>
-            <th>Usuario</th>
-            <th>Contraseña</th>
-            <th>Role</th>
-            <th>Ultima persona en modificar</th>
-            <th>Ultima fecha de modificacion</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-        </tr>
-    </tbody>
+<table class="table-auto">
+  <thead>
+    <tr>
+      <th>Song</th>
+      <th>Artist</th>
+      <th>Year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
+      <td>Malcolm Lockyer</td>
+      <td>1961</td>
+    </tr>
+    <tr>
+      <td>Witchy Woman</td>
+      <td>The Eagles</td>
+      <td>1972</td>
+    </tr>
+    <tr>
+      <td>Shining Star</td>
+      <td>Earth, Wind, and Fire</td>
+      <td>1975</td>
+    </tr>
+  </tbody>
 </table>
 
 
