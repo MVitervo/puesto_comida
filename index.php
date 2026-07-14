@@ -26,7 +26,7 @@
             style="position: sticky; top: 0; height: 100vh;">
 
             <!-- HEADER -->
-            <div class="h-16 flex items-center justify-between px-4 border-b border-slate-700 dark:border-slate-500 cursor-pointer" onclick="navigate('/')" >
+            <div class="h-16 flex items-center justify-between px-4 border-b border-slate-700 dark:border-slate-500 cursor-pointer" onclick="navigate('/')">
                 <div class="flex items-center gap-2">
                     <div class="w-10 h-10 rounded-md shadow-md">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Linkin_Park_logo_2024.svg/960px-Linkin_Park_logo_2024.svg.png" alt="">
@@ -142,6 +142,7 @@
     <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
     <script>
         $(function() {
+            debugger;
 
             loadPage(window.location.pathname);
 
@@ -168,13 +169,13 @@
 
             switch (route) {
                 case "/":
-                    page = "home.php";
-                    break;
-                case "/about":
-                    page = "about.php";
+                    page = "/views/users_view.php";
+                    break;    
+                case "/users":
+                    page = "/views/users_view.php";
                     break;
                 default:
-                    page = "404.php";
+                    page = "/views/404.php";
             }
 
             $.get(page, function(response) {
@@ -186,7 +187,6 @@
         function navigate(route) {
             history.pushState({}, "", route); // esta es la que cambia el url en el navegador
             loadPage(route);
-
         }
 
         function sidebarOption(option) {
@@ -211,10 +211,10 @@
                 },
                 error: function(xhr, status, error) {
                     $('.showContent').html(`
-          <div class="error">
-            Ocurrió un error al cargar la información.
-          </div>
-        `);
+                        <div class="error">
+                            Ocurrió un error al cargar la información.
+                        </div>
+                    `);
                 }
 
             });
