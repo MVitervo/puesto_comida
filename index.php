@@ -5,12 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sidebar Moderno</title>
+    <!-- Tema Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- carga el css de bootstrap -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.8/css/jquery.dataTables.min.css"> <!-- carga los diseños de datatables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css"> <!-- carga los diseños de datatables responsivo -->
+    <!-- Select2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" rel="stylesheet">
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> <!-- carga el jquery -->
-    
+
     <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script> <!-- carga el funcionamiento de datatables -->
-    
+
     <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script> <!-- carga el funcionamiento de datatables responsivo -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">  carga el css de bootstrap -->
+
+    
+    <!-- Bootstrap JS (DESPUÉS de jQuery) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Select2 JS (DESPUÉS de jQuery) -->
+
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Version 3.4.17 de tailwind -->
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> <!-- animacion del modal -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"> <!-- Tiene el diseño del toast -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script> <!-- Tiene el funcionamiento del toast -->
 
 
 </head>
@@ -171,7 +197,7 @@
             switch (route) {
                 case "/":
                     page = "/views/users_view.php";
-                    break;    
+                    break;
                 case "/users":
                     page = "/views/users_view.php";
                     break;
@@ -274,10 +300,6 @@
         });
         */
 
-        tailwind.config = {
-            darkMode: 'class'
-        }
-
         const themeButton = document.getElementById('toggle-theme');
         const html = document.documentElement;
 
@@ -329,30 +351,12 @@
         }
         */
     </script>
+    <footer>
+
+        <!-- -->
+
+    </footer>
 </body>
 
-<footer>
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.8/css/jquery.dataTables.min.css"> <!-- carga los diseños de datatables -->
-    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css"> <!-- carga los diseños de datatables responsivo -->
-
-    <!-- Select2 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
-    <!-- Tema Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" rel="stylesheet">
-    <!-- Bootstrap JS (DESPUÉS de jQuery) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Select2 JS (DESPUÉS de jQuery) -->
-
-    <script src="https://cdn.tailwindcss.com"></script> <!-- Version 3.4.17 de tailwind -->
-    
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> <!-- animacion del modal -->
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"> <!-- Tiene el diseño del toast -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script> <!-- Tiene el funcionamiento del toast -->
-
-    <!-- -->
-
-</footer>
 
 </html>
